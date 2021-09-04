@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>HAMNA HASSAN V.M Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='https://drive.google.com/file/d/1dDzgswWlErn3l-o5YcxlO0L931i1FgdE/view?usp=drivesdk'/>
+        <div class='herosectionDetails'>
+          <h1>HAMNA HASSAN V.M</h1>
+          <h3>front end developer</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p>I am a second year student studying in Adishankara institute of engineering and technology.I got interested in front end development and started attending webinars and all based on that and now i can confidently say that i can do front end development jobs well.I love everything that is related to creativity.So i started learning UI AND UX.so now i am a ux designer too.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='./images/html.svg'>
+          <img title='CSS' src='./images/css.svg'>
+          <img title='Javascript' src='./images/javascript.svg'>
+          <img title='Node.JS' src='./images/node.svg'>
+          <img title='React' src='./images/react.svg'>
+          <img title='MongoDB' src='./images/mongodb.svg'>
+          <img title='Firebase' src='./images/firebase.svg'>
+          <img title='Redux' src='./images/redux.svg'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='./images/css.svg'/>
+            <div class='projectDescription'>
+              <h4>react basic project</h4>
+              <p>I done it by attending a webinar on shapeAI and learning the basics</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='./images/css.svg'/>
+            <div class='projectDescription'>
+              <h4>zomato app</h4>
+              <p>Its a food delivery app</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
